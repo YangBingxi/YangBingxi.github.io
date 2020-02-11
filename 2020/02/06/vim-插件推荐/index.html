@@ -20,8 +20,11 @@
 <meta property="og:image" content="/img/Vim/plug/airline3.png">
 <meta property="og:image" content="/img/Vim/plug/startify.png">
 <meta property="og:image" content="/img/Vim/plug/nerdtree.png">
+<meta property="og:image" content="/img/Vim/plug/taglist.png">
+<meta property="og:image" content="/img/Vim/plug/undotree.png">
+<meta property="og:image" content="/img/Vim/plug/interestingword.png">
 <meta property="article:published_time" content="2020-02-06T14:41:35.000Z">
-<meta property="article:modified_time" content="2020-02-11T02:49:04.478Z">
+<meta property="article:modified_time" content="2020-02-11T04:44:08.897Z">
 <meta property="article:author" content="SwYoung">
 <meta property="article:tag" content="vim">
 <meta property="article:tag" content="linux">
@@ -220,7 +223,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1.1k字</span>
+        <span class="post-count">1.2k字</span>
       </span>
     </span>
 
@@ -261,7 +264,10 @@
 <ul>
 <li>在<code>vimrc</code>中添加设置： <code>color snazzy</code></li>
 <li>airline自动生效，会在不同的Model下显示不同的颜色，以及一些文件相关的信息(文件路径、文件名、所在git分支、当前行、列数、编码等)<br><img src="/img/Vim/plug/airline1.png" alt="airline"><br><img src="/img/Vim/plug/airline2.png" alt="airline"><br><img src="/img/Vim/plug/airline3.png" alt="airline"></li>
-<li>startify会显示一个启动效果(最近打开的文件列表，提过通过文件前的数字编号快速跳转)<br><img src="/img/Vim/plug/startify.png" alt="startify"></li>
+<li>startify会显示一个启动效果(最近打开的文件列表，提过通过文件前的数字编号快速跳转)<ul>
+<li>如果startify没有自动打开，可以执行<code>:startify</code> <br><br><img src="/img/Vim/plug/startify.png" alt="startify"></li>
+</ul>
+</li>
 </ul>
 <hr>
 <h4 id="File-navigation：文件导航相关的插件"><a href="#File-navigation：文件导航相关的插件" class="headerlink" title="File navigation：文件导航相关的插件"></a>File navigation：文件导航相关的插件</h4><p><a href="https://github.com/scrooloose/nerdtree" target="_blank" rel="noopener">Link:nerdtree：文件树</a></p>
@@ -295,6 +301,7 @@
 </ul>
 </li>
 </ul>
+<p><img src="/img/Vim/plug/taglist.png" alt="taglist"></p>
 <hr>
 <h4 id="Error-checking：代码错误检测"><a href="#Error-checking：代码错误检测" class="headerlink" title="Error checking：代码错误检测"></a>Error checking：代码错误检测</h4><p><a href="https://github.com/w0rp/ale" target="_blank" rel="noopener">Link:ale</a></p>
 <ul>
@@ -329,6 +336,7 @@
 </ul>
 </li>
 </ul>
+<p><img src="/img/Vim/plug/undotree.png" alt="undotree"></p>
 <hr>
 <h4 id="Other-visual-enhancement"><a href="#Other-visual-enhancement" class="headerlink" title="Other visual enhancement"></a>Other visual enhancement</h4><p><a href="https://github.com/itchyny/vim-cursorword" target="_blank" rel="noopener">Link:vim-cursorword</a></p>
 <ul>
@@ -337,7 +345,17 @@
 <li><strong>cs’”</strong> : 将单词的’改为”，同理也可以操作’’ “” {} () [] 等</li>
 <li><strong>ds’</strong> : [delete surround]删除单词的’，同理也可以操作’’ “” {} () [] 等</li>
 <li><strong>ds”</strong> : 删除单词的”，同理也可以操作’’ “” {} () [] 等</li>
-<li><strong>ysiw”</strong> : [you add a surround]给光标所在的单词添加”” ，同理也可以添加’’ “” {} () [] 等</li>
+<li><strong>ysiw”</strong> : [you add a surround]给光标所在的单词添加”” ，同理也可以添加’’ “” {} () [] 等<br><a href="https://github.com/yggdroot/indentline" target="_blank" rel="noopener">Link:indentline:代码缩进线</a></li>
+</ul>
+</li>
+</ul>
+<p><a href="https://github.com/lfv89/vim-interestingwords" target="_blank" rel="noopener">Link:vim-interestingwords:高亮单词</a></p>
+<ul>
+<li>快捷键<ul>
+<li>[LEADER]k : 对光标下的单词高亮</li>
+<li>n : 跳转到下一个</li>
+<li>N : 跳转到上一个</li>
+<li>[LEADER]K : 清除高亮<br><img src="/img/Vim/plug/interestingword.png" alt="interestingwords"></li>
 </ul>
 </li>
 </ul>
