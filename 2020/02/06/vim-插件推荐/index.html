@@ -15,13 +15,19 @@
 <meta property="og:site_name" content="Young">
 <meta property="og:description" content="工欲善其事必先利其器之vim-插件介绍为什么要安装插件尽管vim本身已经十分强大，但是还是有很多不足的地方，这些就可以通过插件来进行补充，安装自己喜欢的插件并配置成自己习惯的方式 怎么找vim插件 按照需求在网上搜索 vimawesome 参考别人的开源配置 推荐一个开源项目spacevim">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="/img/Vim/plug/airline1.png">
+<meta property="og:image" content="/img/Vim/plug/airline2.png">
+<meta property="og:image" content="/img/Vim/plug/airline3.png">
+<meta property="og:image" content="/img/Vim/plug/startify.png">
+<meta property="og:image" content="/img/Vim/plug/nerdtree.png">
 <meta property="article:published_time" content="2020-02-06T14:41:35.000Z">
-<meta property="article:modified_time" content="2020-02-06T14:59:51.307Z">
+<meta property="article:modified_time" content="2020-02-11T02:49:04.478Z">
 <meta property="article:author" content="SwYoung">
 <meta property="article:tag" content="vim">
 <meta property="article:tag" content="linux">
 <meta property="article:tag" content="tool">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/img/Vim/plug/airline1.png">
   
     <link rel="alternative" href="/atom.xml" title="Young" type="application/atom+xml">
   
@@ -214,7 +220,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1k字</span>
+        <span class="post-count">1.1k字</span>
       </span>
     </span>
 
@@ -223,7 +229,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">4分</span>
+        <span class="post-count">5分</span>
       </span>
     </span>
 </div>
@@ -251,8 +257,11 @@
 <hr>
 <h4 id="display-tool：有关界面美化的插件"><a href="#display-tool：有关界面美化的插件" class="headerlink" title="display tool：有关界面美化的插件"></a>display tool：有关界面美化的插件</h4><p><a href="https://github.com/vim-airline/vim-airline" target="_blank" rel="noopener">Link:vim-airline:状态栏插件</a></p>
 <p><a href="https://github.com/connorholyday/vim-snazzy" target="_blank" rel="noopener">Link:vim-snazzy：主题插件</a></p>
+<p>[Link:vim-startify:欢迎界面](<a href="https://github.com/mhinz/vim-startify）" target="_blank" rel="noopener">https://github.com/mhinz/vim-startify）</a></p>
 <ul>
 <li>在<code>vimrc</code>中添加设置： <code>color snazzy</code></li>
+<li>airline自动生效，会在不同的Model下显示不同的颜色，以及一些文件相关的信息(文件路径、文件名、所在git分支、当前行、列数、编码等)<br><img src="/img/Vim/plug/airline1.png" alt="airline"><br><img src="/img/Vim/plug/airline2.png" alt="airline"><br><img src="/img/Vim/plug/airline3.png" alt="airline"></li>
+<li>startify会显示一个启动效果(最近打开的文件列表，提过通过文件前的数字编号快速跳转)<br><img src="/img/Vim/plug/startify.png" alt="startify"></li>
 </ul>
 <hr>
 <h4 id="File-navigation：文件导航相关的插件"><a href="#File-navigation：文件导航相关的插件" class="headerlink" title="File navigation：文件导航相关的插件"></a>File navigation：文件导航相关的插件</h4><p><a href="https://github.com/scrooloose/nerdtree" target="_blank" rel="noopener">Link:nerdtree：文件树</a></p>
@@ -261,12 +270,15 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="string">"                           === NERDTree ===                                 "</span></span><br><span class="line"><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span></span><br><span class="line"><span class="string">"autocmd vimenter * NERDTree  "</span>进入vim后，自动加载目录树</span><br><span class="line"><span class="string">"打开文件时不会自动打开目录树和startify，否则会自动打开目录和startify</span></span><br><span class="line"><span class="string">autocmd StdinReadPre * let s:std_in=1</span></span><br><span class="line"><span class="string">"</span>autocmd VimEnter * <span class="keyword">if</span> argc() == 0 &amp;&amp; !exists(<span class="string">"s:std_in"</span>) | NERDTree | endif</span><br><span class="line">autocmd VimEnter *</span><br><span class="line">                \   <span class="keyword">if</span> !argc()</span><br><span class="line">                \ |   Startify</span><br><span class="line">                \ |   NERDTree</span><br><span class="line">                \ |   wincmd w</span><br><span class="line">                \ | endif</span><br><span class="line"></span><br><span class="line">noremap ff :NERDTreeToggle&lt;CR&gt;   <span class="string">"按ff可以进入目录树"</span></span><br><span class="line">noremap &lt;LEADER&gt;v :NERDTreeFind&lt;CR&gt;</span><br><span class="line"><span class="string">"关闭默认显示隐藏文件，需要显示时可以在tree中按I</span></span><br><span class="line"><span class="string">"</span><span class="built_in">let</span> NERDTreeShowHidden=1</span><br><span class="line"></span><br><span class="line"><span class="string">" NERDTress File highlighting</span></span><br><span class="line"><span class="string">function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)</span></span><br><span class="line"><span class="string">exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg</span></span><br><span class="line"><span class="string">exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'<span class="variable">$#</span>'</span></span><br><span class="line"><span class="string">endfunction</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('java', 'blue', 'none', '#3366FF', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('cpp', 'Red', 'none', 'red', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('c', 'Red', 'none', 'red', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('py', 'green', 'none', 'green', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')</span></span><br><span class="line"><span class="string">call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')</span></span><br></pre></td></tr></table></figure>
 <ul>
-<li>快捷键<ul>
+<li><p>快捷键</p>
+<ul>
 <li><strong>ff</strong> : 打开/关闭目录树</li>
 <li><strong>r</strong> : 刷新目录树(需在tree下执行)</li>
 <li><strong>I</strong> : 打开/关闭显示隐藏文件</li>
 <li><strong>[LEADER]v</strong> : 在目录树中查找当前文件</li>
 </ul>
+</li>
+<li><p>配合上面提到的startify可以有如下效果<br><img src="/img/Vim/plug/nerdtree.png" alt="nerdtree"></p>
 </li>
 </ul>
 <hr>
