@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="121.36.5.94">
-  <title>Young</title>
+  <title>Ubuntu-Install | Young</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Young">
-<meta property="og:url" content="121.36.5.94/page/2/index.html">
+  <meta name="description" content="@font-face {   font-family: octicons-link;   src: url(data:font&#x2F;woff;charset&#x3D;utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu-Install">
+<meta property="og:url" content="121.36.5.94/2021/04/14/Ubuntu-Install/index.html">
 <meta property="og:site_name" content="Young">
+<meta property="og:description" content="@font-face {   font-family: octicons-link;   src: url(data:font&#x2F;woff;charset&#x3D;utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQ">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-14T13:23:04.500Z">
+<meta property="article:modified_time" content="2021-04-14T13:23:04.500Z">
 <meta property="article:author" content="SwYoung">
 <meta name="twitter:card" content="summary">
   
@@ -183,22 +187,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-vim-个性化配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Ubuntu-Install" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/01/vim-%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/">vim 个性化配置</a>
+    <h1 class="article-title" itemprop="name">
+      Ubuntu-Install
     </h1>
   
 
         
-        <a href="/2020/02/01/vim-%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/" class="archive-article-date">
-  	<time datetime="2020-02-01T13:26:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-01</time>
+        <a href="/2021/04/14/Ubuntu-Install/" class="archive-article-date">
+  	<time datetime="2021-04-14T13:23:04.500Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-14</time>
 </a>
         
 
@@ -209,7 +211,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">3.8k字</span>
+        <span class="post-count">3.1k字</span>
       </span>
     </span>
 
@@ -218,7 +220,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">19分</span>
+        <span class="post-count">18分</span>
       </span>
     </span>
 </div>
@@ -230,791 +232,1351 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="工欲善其事必先利其器之vim-配置"><a href="#工欲善其事必先利其器之vim-配置" class="headerlink" title="工欲善其事必先利其器之vim-配置"></a>工欲善其事必先利其器之vim-配置</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><h4 id="什么是-vim？"><a href="#什么是-vim？" class="headerlink" title="什么是 vim？"></a>什么是 vim？</h4><blockquote>
-<p>Vim是从 vi 发展出来的一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。</p>
-</blockquote>
-<blockquote>
-<p>简单的来说， vi 是老式的字处理器，不过功能已经很齐全了，但是还是有可以进步的地方。 vim 则可以说是程序开发者的一项很好用的工具。</p>
-</blockquote>
-<blockquote>
-<p>连 vim 的官方网站 (<a href="http://www.vim.org" target="_blank" rel="noopener">http://www.vim.org</a>) 自己也说 vim 是一个程序开发工具而不是文字处理软件。</p>
-</blockquote>
-<h4 id="学习vim有什么用？"><a href="#学习vim有什么用？" class="headerlink" title="学习vim有什么用？"></a>学习vim有什么用？</h4><p>熟练掌握vim可以使你的工作效率提升数倍。</p>
-<h4 id="推荐教程"><a href="#推荐教程" class="headerlink" title="推荐教程"></a>推荐教程</h4>
-        
-          <a class="article-more-a" href="/2020/02/01/vim-%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/#more">more >></a>
-        
-      
-
-
-<!-- 开始添加版权声明-->
-
-
-  <div class="declare" hidden="hidden"></div>
-
-<!-- 添加完成 -->
-
-
-      
-    </div>
-
-<!-- 添加本文结束标记-->
-
-<!-- 添加完成 -->
-
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vim</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">tool</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-<!-- 开始添加阅读量-->
-
-<!-- 添加完成 -->
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/code//" class="article-tag-list-link color5">code</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/code/生产力//" class="article-tag-list-link color4">生产力</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/01/vim-%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-<!-- 添加评论 -->
-
-
-  
-    <article id="post-设置git-commmit-时间" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/31/%E8%AE%BE%E7%BD%AEgit-commmit-%E6%97%B6%E9%97%B4/">设置git commmit 时间</a>
-    </h1>
-  
-
-        
-        <a href="/2020/01/31/%E8%AE%BE%E7%BD%AEgit-commmit-%E6%97%B6%E9%97%B4/" class="archive-article-date">
-  	<time datetime="2020-01-31T13:45:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-31</time>
-</a>
-        
-
-<!-- 开始添加字数统计-->
-		
-        <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">37字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-
-        
-<!-- 添加完成 -->
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="设置git-commit-时间"><a href="#设置git-commit-时间" class="headerlink" title="设置git commit 时间"></a>设置git commit 时间</h2><p>只要在commit的时候添加时间参数即可如：<br><code>git commit --date=&quot;31 Dec 23:23:23&quot; -m &quot;commit message&quot;</code></p>
-
-      
-
-
-<!-- 开始添加版权声明-->
-
-
-  <div class="declare" hidden="hidden"></div>
-
-<!-- 添加完成 -->
-
-
-      
-    </div>
-
-<!-- 添加本文结束标记-->
-
-<!-- 添加完成 -->
-
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">tool</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-<!-- 开始添加阅读量-->
-
-<!-- 添加完成 -->
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/生产力//" class="article-tag-list-link color4">生产力</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/生产力/code//" class="article-tag-list-link color5">code</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/31/%E8%AE%BE%E7%BD%AEgit-commmit-%E6%97%B6%E9%97%B4/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-<!-- 添加评论 -->
-
-
-  
-    <article id="post-Linux下如何避免误删文件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/23/Linux%E4%B8%8B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/">Linux下如何避免误删文件</a>
-    </h1>
-  
-
-        
-        <a href="/2020/01/23/Linux%E4%B8%8B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/" class="archive-article-date">
-  	<time datetime="2020-01-23T12:01:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-23</time>
-</a>
-        
-
-<!-- 开始添加字数统计-->
-		
-        <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">339字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-
-        
-<!-- 添加完成 -->
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Linux下如何避免误删文件"><a href="#Linux下如何避免误删文件" class="headerlink" title="Linux下如何避免误删文件"></a>Linux下如何避免误删文件</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在Linux的使用中，我们会有这样的惨痛经历：用rm不小心删除了某个文件却再也找不回来，只能在痛苦和悔恨中再次码字。当然rm误删文件在桌面版的Linux中还是比较容易处理，只要去Trash文件夹中找回即可，但是如果操作的服务器，那就不好办了。</p>
-        
-          <a class="article-more-a" href="/2020/01/23/Linux%E4%B8%8B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/#more">more >></a>
-        
-      
-
-
-<!-- 开始添加版权声明-->
-
-
-  <div class="declare" hidden="hidden"></div>
-
-<!-- 添加完成 -->
-
-
-      
-    </div>
-
-<!-- 添加本文结束标记-->
-
-<!-- 添加完成 -->
-
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">tool</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-<!-- 开始添加阅读量-->
-
-<!-- 添加完成 -->
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/生产力//" class="article-tag-list-link color4">生产力</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/23/Linux%E4%B8%8B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E8%AF%AF%E5%88%A0%E6%96%87%E4%BB%B6/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-<!-- 添加评论 -->
-
-
-  
-    <article id="post-将个人博客部署到服务器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/12/%E5%B0%86%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/">将个人博客部署到服务器</a>
-    </h1>
-  
-
-        
-        <a href="/2020/01/12/%E5%B0%86%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="archive-article-date">
-  	<time datetime="2020-01-12T10:50:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-12</time>
-</a>
-        
-
-<!-- 开始添加字数统计-->
-		
-        <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">754字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">3分</span>
-      </span>
-    </span>
-</div>
-
-        
-<!-- 添加完成 -->
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="将个人博客部署到服务器"><a href="#将个人博客部署到服务器" class="headerlink" title="将个人博客部署到服务器"></a>将个人博客部署到服务器</h2><h3 id="环境："><a href="#环境：" class="headerlink" title="环境："></a>环境：</h3><ul>
-<li>会使用hexo搭建blog</li>
-<li>有可使用的服务器</li>
-<li>服务器可以使用ssh连接</li>
+        <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>@font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    color:#333;
+    background:#fff;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+.markdown-body .octicon-link:before {
+  font: normal normal normal 16px/1 octicons-link;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  content: '\f05c';
+  vertical-align: middle;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+</style><title>Ubuntu-Install</title><meta name="generator" content="Hexo 4.2.0"></head><body><article class="markdown-body"><hr>
+<p>title: Ubuntu Install
+date: 2020-01-01 10:09:24
+tags:</p>
+<ul>
+<li>tool</li>
+<li>ubuntu
+categories:</li>
+<li>生产力
+comments: "true"</li>
 </ul>
-<h3 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h3><h4 id="一、服务器端操作"><a href="#一、服务器端操作" class="headerlink" title="一、服务器端操作"></a>一、服务器端操作</h4><h5 id="1-本地连接服务器（ssh）"><a href="#1-本地连接服务器（ssh）" class="headerlink" title="1. 本地连接服务器（ssh）"></a>1. 本地连接服务器（ssh）</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh username@serverIP <span class="comment">#注意修改成自己的用户名和ip地址</span></span><br><span class="line"><span class="comment"># 回车后输入该用户名的登录密码</span></span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2020/01/12/%E5%B0%86%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/#more">more >></a>
-        
+<hr>
+<h2>
+<a id="user-content-ubuntu-install" class="anchor" href="#ubuntu-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ubuntu Install</h2>
+<hr>
+<h3>
+<a id="user-content-change-sourse-to-ailiyun" class="anchor" href="#change-sourse-to-ailiyun" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Change sourse to ailiyun</strong>
+</h3>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> 1.复制源文件备份，以防万一</span>
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+<span class="pl-c"><span class="pl-c">#</span> 2.编辑源列表文件</span>
+sudo vim /etc/apt/sources.list <span class="pl-c"><span class="pl-c">#</span>请确保安装了vim，或者使用 sudo vi /etc/apt/sources.list</span>
+<span class="pl-c"><span class="pl-c">#</span> 3.查看新版本信息</span>
+lsb_release -c
+<span class="pl-c"><span class="pl-c">#</span>Ubuntu 12.04 (LTS)代号为precise。</span>
+<span class="pl-c"><span class="pl-c">#</span>Ubuntu 14.04 (LTS)代号为trusty。</span>
+<span class="pl-c"><span class="pl-c">#</span>Ubuntu 15.04 代号为vivid。</span>
+<span class="pl-c"><span class="pl-c">#</span>Ubuntu 15.10 代号为wily。</span>
+<span class="pl-c"><span class="pl-c">#</span>Ubuntu 16.04 (LTS)代号为xenial。</span>
+<span class="pl-c"><span class="pl-c">#</span>Ubuntu 18.04 (LTS)代号为bionic。</span>
+<span class="pl-c"><span class="pl-c">#</span> 4.将原有的内容注释掉，添加以下内容，以Ubuntu18.04为例（或者你把里面内容修改成下面的就可以，但是不能有除了以下内容的有效内容，注意对应到你的版本）</span>
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+<span class="pl-c"><span class="pl-c">#</span> 5.更新软件列表</span>
+sudo apt-get update
+<span class="pl-c"><span class="pl-c">#</span> 6.更新软件包</span>
+sudo apt-get upgrade</pre></div>
+
+<hr>
+<h3>
+<a id="user-content-grub-customizer" class="anchor" href="#grub-customizer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>grub-customizer</strong>
+</h3>
+<div class="highlight highlight-source-shell"><pre>sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt-get update
+sudo apt-get install grub-customizer</pre></div>
+<hr>
+<h3>
+<a id="user-content-vim" class="anchor" href="#vim" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>vim</strong>
+</h3>
+<div class="highlight highlight-source-shell"><pre>sudo apt update
+sudo apt install vim</pre></div>
+<hr>
+<h3>
+<a id="user-content-sougou-pinyin" class="anchor" href="#sougou-pinyin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Sougou Pinyin</strong>
+</h3>
+<p><a href="https://pinyin.sogou.com/linux/?r=pinyin" target="_blank" rel="nofollow noopener">link</a></p>
+<hr>
+<h3>
+<a id="user-content-chrome" class="anchor" href="#chrome" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>chrome</strong>
+</h3>
+<p><a href="https://www.google.cn/chrome/" target="_blank" rel="nofollow noopener">link</a></p>
+<hr>
+<h3>
+<a id="user-content-ubuntu-cleaner" class="anchor" href="#ubuntu-cleaner" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Ubuntu Cleaner</strong>
+</h3>
+<div class="highlight highlight-source-shell"><pre>sudo add-apt-repository ppa:gerardpuig/ppa
+sudo apt update
+sudo apt install ubuntu-cleaner</pre></div>
+<hr>
+<h3>
+<a id="user-content-ssr" class="anchor" href="#ssr" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>ssr</strong>
+</h3>
+<p><a href="https://github.com/youngsw/ssr_Ubuntu" target="_blank" rel="noopener">link</a></p>
+<hr>
+<h3>
+<a id="user-content-wps" class="anchor" href="#wps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>wps</strong>
+</h3>
+<p><a href="https://www.wps.cn/product/wpslinux" target="_blank" rel="nofollow noopener">link</a></p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span>fix the problem of fonts:</span>
+	1.download the font,[link](https://github.com/youngsw/wps-fonts-)
+	2.sudo cp <span class="pl-k">*</span> /usr/share/fonts
+	3.sudo mkfontscale
+	4.sudo mkfontdir
+	5.sudo fc-cache</pre></div>
+<hr>
+<h3>
+<a id="user-content-idea" class="anchor" href="#idea" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>IDEA</strong>
+</h3>
+<p><a href="https://www.jetbrains.com/idea/" target="_blank" rel="nofollow noopener">link</a></p>
+<hr>
+<h3>
+<a id="user-content-vsc" class="anchor" href="#vsc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>vsc</strong>
+</h3>
+<p><a href="https://code.visualstudio.com/" target="_blank" rel="nofollow noopener">link</a></p>
+<hr>
+<h3>
+<a id="user-content-mysql" class="anchor" href="#mysql" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>mysql</strong>
+</h3>
+<div class="highlight highlight-source-shell"><pre>sudo apt update
+sudo apt install mysql-server</pre></div>
+<div class="highlight highlight-source-shell"><pre> <span class="pl-c"><span class="pl-c">#</span>if you don't set the password for root,it will be error while start it,you can fix it by:</span>
+1. (bash):sudo mysql -uroot -p <span class="pl-c"><span class="pl-c">#</span>Use root login mysql</span>
+2. (mysql):update mysql.user <span class="pl-c1">set</span> authentication_string=PASSWORD(<span class="pl-s"><span class="pl-pds">'</span>newPwd<span class="pl-pds">'</span></span>), plugin=<span class="pl-s"><span class="pl-pds">'</span>mysql_native_password<span class="pl-pds">'</span></span> where user=<span class="pl-s"><span class="pl-pds">'</span>root<span class="pl-pds">'</span></span><span class="pl-k">;</span>
+3. (bash):sudo service mysql stop
+4. (bash):sudo service mysql start</pre></div>
+<hr>
+<h3>
+<a id="user-content-mysql-workbench" class="anchor" href="#mysql-workbench" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>mysql-workbench</strong>
+</h3>
+<div class="highlight highlight-source-shell"><pre>sudo apt update
+sudo apt install mysql-workbench</pre></div>
+<hr>
+<h3>
+<a id="user-content-redis" class="anchor" href="#redis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>redis</strong>
+</h3>
+<div class="highlight highlight-source-shell"><pre>sudo apt update
+sudo apt install redis-server
+<span class="pl-c"><span class="pl-c">#</span>test:</span>
+redis-cli</pre></div>
+<h3>
+<a id="user-content-java" class="anchor" href="#java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>java</strong>
+</h3>
+<div class="highlight highlight-source-shell"><pre>1. download the jdk,link:https://www.oracle.com/technetwork/java/javase/downloads/index.html
+2. <span class="pl-c1">cd</span> /opt
+3. sudo mkdir java
+4. sudo cp jdk-<span class="pl-k">*</span>.tar.gz /opt/java
+5. tar -zxvf jdk-<span class="pl-k">*</span>.tar.gz
+6. sudo vim /etc/profile
+7. add to the tail of the file
+   <span class="pl-c"><span class="pl-c">#</span>set java environment</span>
+   <span class="pl-k">export</span> JAVA_HOME=/opt/java/jdk-<span class="pl-k">*</span>
+   <span class="pl-k">export</span> PATH=<span class="pl-smi">${JAVA_HOME}</span>/bin:<span class="pl-smi">${PATH}</span>
+8. <span class="pl-c1">source</span> /etc/profile
+9. <span class="pl-c1">test</span>
+   java -version</pre></div>
+<hr>
+<h3>
+<a id="user-content-vlc-video-player" class="anchor" href="#vlc-video-player" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>VLC (video player)</strong>
+</h3>
+<div class="highlight highlight-source-shell"><pre>sudo apt update
+sudo apt install vlc</pre></div>
+<hr>
+<h3>
+<a id="user-content-chm-reader" class="anchor" href="#chm-reader" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>CHM reader</strong>
+</h3>
+<div class="highlight highlight-source-shell"><pre>sudo apt update
+sudo apt-get install xchm</pre></div>
+<hr>
+<h3>
+<a id="user-content-peek" class="anchor" href="#peek" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>peek</strong>
+</h3>
+<div class="highlight highlight-source-shell"><pre>sudo add-apt-repository ppa:peek-developers/stable
+sudo apt update
+sudo apt-get install peek</pre></div>
+<hr>
+<h3>
+<a id="user-content-gitkraken" class="anchor" href="#gitkraken" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>gitkraken</strong>
+</h3>
+<p><a href="https://www.gitkraken.com/download/linux-deb" target="_blank" rel="nofollow noopener">link</a></p>
+<hr>
+<h3>
+<a id="user-content-hexo" class="anchor" href="#hexo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>hexo</strong>
+</h3>
+<div class="highlight highlight-source-shell"><pre>sudo apt-get update
+sudo apt-get install nodejs
+sudo apt-get install npm
+
+nodejs -v
+npm -v
+
+mkdir hexo
+<span class="pl-c1">cd</span> hexo
+sudo npm install -g hexo-cli
+hexo init
+
+<span class="pl-c"><span class="pl-c">#</span> if have error,do this:</span>
+sudo npm config <span class="pl-c1">set</span> user 0
+sudo npm config <span class="pl-c1">set</span> unsafe-perm <span class="pl-c1">true</span>
+sudo npm install -g hexo-cli
+
+
+/<span class="pl-k">***********************************************************************************</span>/
+Write blog:
+Step1: 
+    hexo new post <span class="pl-s"><span class="pl-pds">"</span>article title<span class="pl-pds">"</span></span> //Create a new .md file and a new folder to save it img.
+Step2:
+    //Write your blog <span class="pl-k">in</span> your file which is just create.
+Step3:
+    hexo g //Create static web.
+    hexo s //Start the server,and <span class="pl-k">then</span> you can preview your blog <span class="pl-k">in</span> your browser with <span class="pl-s"><span class="pl-pds">"</span>localhost:4000<span class="pl-pds">"</span></span>.
+    hexo d //put your new Blog qo your github <span class="pl-k">if</span> you had linked to your github.
+<span class="pl-k">*</span>/</pre></div>
+<h3>
+<a id="user-content-trash-cli" class="anchor" href="#trash-cli" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>trash-cli</strong>
+</h3>
+<div class="highlight highlight-source-shell"><pre>sudo apt install trash-cli</pre></div>
+<h3>
+<a id="user-content-figlet" class="anchor" href="#figlet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>figlet</h3>
+<div class="highlight highlight-source-shell"><pre>sudo apt install figlet</pre></div>
+<p>__By SwYoung</p>
+</article></body></html>
       
 
 
 <!-- 开始添加版权声明-->
 
 
-  <div class="declare" hidden="hidden"></div>
+  <div class="declare">
+    <ul><li><strong>本文作者：</strong>
+    
+      SwYoung
+    
+	</li></ul>
+    <ul><li><strong>本文链接：</strong>
+	 <a href="https:121.36.5.94/2021/04/14/Ubuntu-Install/" target="_blank" rel="noopener">https:121.36.5.94/2021/04/14/Ubuntu-Install/</a>
+	</li></ul>
+    <ul><li><strong>版权声明：</strong>
+    本作品采用
+    <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    进行许可。转载请注明出处！
+    
+	</li></ul>
+      <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+    
+  </div>
 
 <!-- 添加完成 -->
 
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>感谢打赏<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assest/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assest/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
 
 <!-- 添加本文结束标记-->
+
+<div style="text-align:center;color: #00BFFF;font-size:14px;">
+     -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
+     </div>
 
 <!-- 添加完成 -->
 
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网站</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">tool</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
 <!-- 开始添加阅读量-->
+
+		<span id="busuanzi_container_page_pv">
+  |  阅读量<span id="busuanzi_value_page_pv"></span>次
+</span>
 
 <!-- 添加完成 -->
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/后端//" class="article-tag-list-link color3">后端</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/12/%E5%B0%86%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/">展开全文 >></a>
-        </p>
       
 
       
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
         
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-<!-- 添加评论 -->
-
-
-  
-    <article id="post-Ubuntu-Install" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/01/Ubuntu-Install/">Ubuntu Install</a>
-    </h1>
-  
-
-        
-        <a href="/2020/01/01/Ubuntu-Install/" class="archive-article-date">
-  	<time datetime="2020-01-01T02:09:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-01</time>
-</a>
-        
-
-<!-- 开始添加字数统计-->
-		
-        <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">699字</span>
-      </span>
+      </div>
     </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">4分</span>
-      </span>
-    </span>
+  </div>
 </div>
 
-        
-<!-- 添加完成 -->
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Ubuntu-Install"><a href="#Ubuntu-Install" class="headerlink" title="Ubuntu Install"></a>Ubuntu Install</h2><hr>
-<h3 id="Change-sourse-to-ailiyun"><a href="#Change-sourse-to-ailiyun" class="headerlink" title="Change sourse to ailiyun"></a><strong>Change sourse to ailiyun</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1.复制源文件备份，以防万一</span></span><br><span class="line">sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak</span><br><span class="line"><span class="comment"># 2.编辑源列表文件</span></span><br><span class="line">sudo vim /etc/apt/sources.list <span class="comment">#请确保安装了vim，或者使用 sudo vi /etc/apt/sources.list</span></span><br><span class="line"><span class="comment"># 3.查看新版本信息</span></span><br><span class="line">lsb_release -c</span><br><span class="line"><span class="comment">#Ubuntu 12.04 (LTS)代号为precise。</span></span><br><span class="line"><span class="comment">#Ubuntu 14.04 (LTS)代号为trusty。</span></span><br><span class="line"><span class="comment">#Ubuntu 15.04 代号为vivid。</span></span><br><span class="line"><span class="comment">#Ubuntu 15.10 代号为wily。</span></span><br><span class="line"><span class="comment">#Ubuntu 16.04 (LTS)代号为xenial。</span></span><br><span class="line"><span class="comment">#Ubuntu 18.04 (LTS)代号为bionic。</span></span><br><span class="line"><span class="comment"># 4.将原有的内容注释掉，添加以下内容，以Ubuntu18.04为例（或者你把里面内容修改成下面的就可以，但是不能有除了以下内容的有效内容，注意对应到你的版本）</span></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line"><span class="comment"># 5.更新软件列表</span></span><br><span class="line">sudo apt-get update</span><br><span class="line"><span class="comment"># 6.更新软件包</span></span><br><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2020/01/01/Ubuntu-Install/#more">more >></a>
-        
-      
-
-
-<!-- 开始添加版权声明-->
-
-
-  <div class="declare" hidden="hidden"></div>
-
-<!-- 添加完成 -->
-
-
-      
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http:121.36.5.94/2021/04/14/Ubuntu-Install/" alt="微信分享二维码">
     </div>
-
-<!-- 添加本文结束标记-->
-
-<!-- 添加完成 -->
-
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ubuntu</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">tool</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-<!-- 开始添加阅读量-->
-
-<!-- 添加完成 -->
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/生产力//" class="article-tag-list-link color4">生产力</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/01/Ubuntu-Install/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-<!-- 添加评论 -->
-
-
-  
-    <article id="post-校园知乎网站" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/11/%E6%A0%A1%E5%9B%AD%E7%9F%A5%E4%B9%8E%E7%BD%91%E7%AB%99/">校园知乎网站</a>
-    </h1>
-  
-
-        
-        <a href="/2019/12/11/%E6%A0%A1%E5%9B%AD%E7%9F%A5%E4%B9%8E%E7%BD%91%E7%AB%99/" class="archive-article-date">
-  	<time datetime="2019-12-11T02:28:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-11</time>
-</a>
-        
-
-<!-- 开始添加字数统计-->
-		
-        <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">5字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
 </div>
 
-        
-<!-- 添加完成 -->
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Hi-This-is-a-test"><a href="#Hi-This-is-a-test" class="headerlink" title="Hi This is a test"></a>Hi This is a test</h2>
-        
-          <a class="article-more-a" href="/2019/12/11/%E6%A0%A1%E5%9B%AD%E7%9F%A5%E4%B9%8E%E7%BD%91%E7%AB%99/#more">more >></a>
-        
-      
-
-
-<!-- 开始添加版权声明-->
-
-
-  <div class="declare" hidden="hidden"></div>
-
-<!-- 添加完成 -->
-
-
-      
-    </div>
-
-<!-- 添加本文结束标记-->
-
-<!-- 添加完成 -->
-
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网站</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-<!-- 开始添加阅读量-->
-
-<!-- 添加完成 -->
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/code//" class="article-tag-list-link color5">code</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/code/后端//" class="article-tag-list-link color3">后端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/11/%E6%A0%A1%E5%9B%AD%E7%9F%A5%E4%B9%8E%E7%BD%91%E7%AB%99/">展开全文 >></a>
-        </p>
-      
-
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2020/04/04/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%90%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">命令行向服务器传输文件</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -1029,301 +1591,105 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-<!-- 添加评论 -->
-
-
-  
-    <article id="post-Ubuntu下使用SSR科学上网" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/12/Ubuntu%E4%B8%8B%E4%BD%BF%E7%94%A8SSR%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">Ubuntu下使用SSR科学上网</a>
-    </h1>
-  
-
-        
-        <a href="/2019/07/12/Ubuntu%E4%B8%8B%E4%BD%BF%E7%94%A8SSR%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" class="archive-article-date">
-  	<time datetime="2019-07-12T12:59:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-12</time>
-</a>
-        
-
-<!-- 开始添加字数统计-->
-		
-        <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">141字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-
-        
-<!-- 添加完成 -->
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Ubuntu下使用SSR科学上网"><a href="#Ubuntu下使用SSR科学上网" class="headerlink" title="Ubuntu下使用SSR科学上网"></a>Ubuntu下使用SSR科学上网</h1><h2 id="一、准备"><a href="#一、准备" class="headerlink" title="一、准备"></a>一、准备</h2><ul>
-<li><p>操作系统：ubuntu14.04 及以上</p>
-</li>
-<li><p>ssr：使用 <code>electron-ssr-0.2.6</code>客户端<br>下载地址：<a href="https://github.com/youngsw/ssr_Ubuntu" target="_blank" rel="noopener">点击下载</a></p>
-        
-          <a class="article-more-a" href="/2019/07/12/Ubuntu%E4%B8%8B%E4%BD%BF%E7%94%A8SSR%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/#more">more >></a>
-        
-      
-
-
-<!-- 开始添加版权声明-->
-
-
-  <div class="declare" hidden="hidden"></div>
-
-<!-- 添加完成 -->
-
-
-      
-    </div>
-
-<!-- 添加本文结束标记-->
-
-<!-- 添加完成 -->
-
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ubuntu</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">tool</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-<!-- 开始添加阅读量-->
-
-<!-- 添加完成 -->
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/生产力//" class="article-tag-list-link color4">生产力</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/12/Ubuntu%E4%B8%8B%E4%BD%BF%E7%94%A8SSR%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">
+Ubuntu Install</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.1.</span> <span class="toc-text">
+Change sourse to ailiyun
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.2.</span> <span class="toc-text">
+grub-customizer
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.3.</span> <span class="toc-text">
+vim
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.4.</span> <span class="toc-text">
+Sougou Pinyin
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.5.</span> <span class="toc-text">
+chrome
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.6.</span> <span class="toc-text">
+Ubuntu Cleaner
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.7.</span> <span class="toc-text">
+ssr
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.8.</span> <span class="toc-text">
+wps
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.9.</span> <span class="toc-text">
+IDEA
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.10.</span> <span class="toc-text">
+vsc
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.11.</span> <span class="toc-text">
+mysql
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.12.</span> <span class="toc-text">
+mysql-workbench
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.13.</span> <span class="toc-text">
+redis
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.14.</span> <span class="toc-text">
+java
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.15.</span> <span class="toc-text">
+VLC (video player)
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.16.</span> <span class="toc-text">
+CHM reader
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.17.</span> <span class="toc-text">
+peek
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.18.</span> <span class="toc-text">
+gitkraken
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.19.</span> <span class="toc-text">
+hexo
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.20.</span> <span class="toc-text">
+trash-cli
+</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.21.</span> <span class="toc-text">
+figlet</span></a></li></ol></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
-
-<!-- 添加评论 -->
-
-
   
-    <article id="post-简易晶体管图示仪" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/20/%E7%AE%80%E6%98%93%E6%99%B6%E4%BD%93%E7%AE%A1%E5%9B%BE%E7%A4%BA%E4%BB%AA/">简单电路实现晶体管特性图示</a>
-    </h1>
   
 
-        
-        <a href="/2018/09/20/%E7%AE%80%E6%98%93%E6%99%B6%E4%BD%93%E7%AE%A1%E5%9B%BE%E7%A4%BA%E4%BB%AA/" class="archive-article-date">
-  	<time datetime="2018-09-20T14:08:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-20</time>
-</a>
-        
+  
 
-<!-- 开始添加字数统计-->
-		
-        <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">583字</span>
-      </span>
-    </span>
+  
 
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">2分</span>
-      </span>
-    </span>
-</div>
-
-        
-<!-- 添加完成 -->
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="简易晶体管图示仪"><a href="#简易晶体管图示仪" class="headerlink" title="简易晶体管图示仪"></a>简易晶体管图示仪</h1><h2 id="说明：利用简单电路实现晶体管图示"><a href="#说明：利用简单电路实现晶体管图示" class="headerlink" title="说明：利用简单电路实现晶体管图示"></a>说明：利用简单电路实现晶体管图示</h2><p>如果网站的图片显示异常可点击链接<a href="https://www.cnblogs.com/youngsw/p/9678493.html" target="_blank" rel="noopener">Link</a></p>
-<h3 id="一、-NE555时钟电路"><a href="#一、-NE555时钟电路" class="headerlink" title="一、 NE555时钟电路"></a>一、 NE555时钟电路</h3><p> <img src="/img/JianYiJingTiGuanTuShiYi/11.png" alt="img"></p>
-<p>关于555时钟电路的参数计算：</p>
-<p>（参考网站：<a href="http://www.elecfans.com/tools/555dingshiqipinlv.html" target="_blank" rel="noopener">LInk</a>）</p>
-<p>T2 (off-time) = 0.693 * R2 * C1<br>T = 0.693<em>( (R1 + 2R2) * C1)<br>F = 1/ T<br>    = 1.44 / ( (R1 + 2R2) * C1)<br>D = (T1 /(T1+T2))</em>100</p>
-        
-          <a class="article-more-a" href="/2018/09/20/%E7%AE%80%E6%98%93%E6%99%B6%E4%BD%93%E7%AE%A1%E5%9B%BE%E7%A4%BA%E4%BB%AA/#more">more >></a>
-        
-      
-
-
-<!-- 开始添加版权声明-->
-
-
-  <div class="declare" hidden="hidden"></div>
-
-<!-- 添加完成 -->
-
-
-      
-    </div>
-
-<!-- 添加本文结束标记-->
-
-<!-- 添加完成 -->
-
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">电子</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-<!-- 开始添加阅读量-->
-
-<!-- 添加完成 -->
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/电子//" class="article-tag-list-link color3">电子</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/20/%E7%AE%80%E6%98%93%E6%99%B6%E4%BD%93%E7%AE%A1%E5%9B%BE%E7%A4%BA%E4%BB%AA/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
+  
 
 
 <!-- 添加评论 -->
 
+	
+	    <section id="comments" class="comments">
+	      <style>
+	        .comments{margin:30px;padding:10px;background:#fff}
+	        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+	      </style>
+	      <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    var notify = 'false' == true ? true : false;
+    var verify = 'false' == true ? true : false;
+    new Valine({
+        av: AV,
+        el: '#vcomment',
+        notify: notify,
+        app_id: "RylUDpv3MaeDPgpnmSzbV4Y1-gzGzoHsz",
+        app_key: "kn3j8uhRqCsDb7sCTo96wOlM",
+        placeholder: "如果你不写评论，我就霸占这里～",
+        avatar:"mm",
+    });
+</script>
 
-  
-  
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">« Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next »</a>
-    </nav>
-  
-
+	  </section>
+	
 
 
           </div>
@@ -1362,8 +1728,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
