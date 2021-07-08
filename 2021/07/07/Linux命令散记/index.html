@@ -16,7 +16,7 @@
 <meta property="og:description" content="Linux命令散记   文本编辑 vim   文本查看 awk">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-07-07T14:23:48.000Z">
-<meta property="article:modified_time" content="2021-07-07T14:40:14.376Z">
+<meta property="article:modified_time" content="2021-07-08T14:13:21.173Z">
 <meta property="article:author" content="YangBingxi">
 <meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
@@ -212,7 +212,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">103字</span>
+        <span class="post-count">134字</span>
       </span>
     </span>
 
@@ -251,7 +251,7 @@
 
 <h3><span id="文本编辑">文本编辑</span></h3><h4><span id="vim">vim</span></h4><hr>
 <h3><span id="文本查看">文本查看</span></h3><h4><span id="awk">awk</span></h4><p>样例</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 每行按空格或TAB分割，输出文本中的1、4项</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> awk <span class="string">'&#123;print $1,$4&#125;'</span> log.txt</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用<span class="string">","</span>分割</span></span><br><span class="line"><span class="meta">$</span><span class="bash">  awk -F, <span class="string">'&#123;print $1,$2&#125;'</span>   log.txt</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用多个分隔符.先使用空格分割，然后对分割结果再使用<span class="string">","</span>分割</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> awk -F <span class="string">'[ ,]'</span>  <span class="string">'&#123;print $1,$2,$5&#125;'</span>   log.txt</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 每行按空格或TAB分割，输出文本中的1、4项</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> awk <span class="string">'&#123;print $1,$4&#125;'</span> log.txt</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用<span class="string">","</span>分割</span></span><br><span class="line"><span class="meta">$</span><span class="bash">  awk -F, <span class="string">'&#123;print $1,$2&#125;'</span>   log.txt</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用多个分隔符.先使用空格分割，然后对分割结果再使用<span class="string">","</span>分割</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> awk -F <span class="string">'[ ,]'</span>  <span class="string">'&#123;print $1,$2,$5&#125;'</span>   log.txt</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 对分割后的数据进行运算</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> awk -F <span class="string">' '</span>  <span class="string">'&#123;print $1,$2-1&#125;'</span>   log.txt</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> awk -F <span class="string">' '</span>  <span class="string">'&#123;print $1,$2-$3&#125;'</span>   log.txt</span></span><br></pre></td></tr></table></figure>
 
 
       
