@@ -234,20 +234,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Linux下如何避免误删文件"><a href="#Linux下如何避免误删文件" class="headerlink" title="Linux下如何避免误删文件"></a>Linux下如何避免误删文件</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在Linux的使用中，我们会有这样的惨痛经历：用rm不小心删除了某个文件却再也找不回来，只能在痛苦和悔恨中再次码字。当然rm误删文件在桌面版的Linux中还是比较容易处理，只要去Trash文件夹中找回即可，但是如果操作的服务器，那就不好办了。</p>
+        <h2><span id="linux下如何避免误删文件">Linux下如何避免误删文件</span></h2><h3><span id="前言">前言</span></h3><p>在Linux的使用中，我们会有这样的惨痛经历：用rm不小心删除了某个文件却再也找不回来，只能在痛苦和悔恨中再次码字。当然rm误删文件在桌面版的Linux中还是比较容易处理，只要去Trash文件夹中找回即可，但是如果操作的服务器，那就不好办了。</p>
 <p>下面我给大家推荐几个方法，可以有效的减少这种麻烦的产生。</p>
 <a id="more"></a>
 
-<h3 id="预防方法"><a href="#预防方法" class="headerlink" title="预防方法"></a>预防方法</h3><h4 id="改变使用rm的习惯"><a href="#改变使用rm的习惯" class="headerlink" title="改变使用rm的习惯"></a>改变使用rm的习惯</h4><ul>
+<h3><span id="预防方法">预防方法</span></h3><h4><span id="改变使用rm的习惯">改变使用rm的习惯</span></h4><ul>
 <li>建立一个文件夹，用来存储被“删除”的文件，如Trash</li>
 <li>再以后的使用中，遇到删除的东西，只要使用mv指令，移动到Trash文件夹即可</li>
 </ul>
-<h4 id="trash-cli"><a href="#trash-cli" class="headerlink" title="trash-cli"></a>trash-cli</h4><h5 id="软件介绍"><a href="#软件介绍" class="headerlink" title="软件介绍"></a>软件介绍</h5><p>trash-cli是命令行下可以用来管理垃圾文件的一个软件</p>
-<h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install trash-cli</span><br></pre></td></tr></table></figure>
+<h4><span id="trash-cli">trash-cli</span></h4><h5><span id="软件介绍">软件介绍</span></h5><p>trash-cli是命令行下可以用来管理垃圾文件的一个软件</p>
+<h5><span id="安装">安装</span></h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install trash-cli</span><br></pre></td></tr></table></figure>
 
-<h5 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">trash 待删除的文件 <span class="comment">#删除某个文件</span></span><br><span class="line">trash-put 待删除的文件  <span class="comment">#与trash一样，删除某个文件</span></span><br><span class="line">trash-empty <span class="comment">#清空回收站</span></span><br><span class="line">trash-list <span class="comment">#列出回收站</span></span><br><span class="line">restore-trash <span class="comment">#恢复文件，根据提示的编号进行恢复</span></span><br><span class="line">trash-rm  <span class="comment">#删除回收站中指定文件</span></span><br></pre></td></tr></table></figure>
+<h5><span id="使用">使用</span></h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">trash 待删除的文件 <span class="comment">#删除某个文件</span></span><br><span class="line">trash-put 待删除的文件  <span class="comment">#与trash一样，删除某个文件</span></span><br><span class="line">trash-empty <span class="comment">#清空回收站</span></span><br><span class="line">trash-list <span class="comment">#列出回收站</span></span><br><span class="line">restore-trash <span class="comment">#恢复文件，根据提示的编号进行恢复</span></span><br><span class="line">trash-rm  <span class="comment">#删除回收站中指定文件</span></span><br></pre></td></tr></table></figure>
 
-<h5 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h5><p>可以根据自身需要进行命令的软连接</p>
+<h5><span id="说明">说明</span></h5><p>可以根据自身需要进行命令的软连接</p>
 <p>如：<code>alias rm=&#39;trash&#39;</code>将rm指令链接为trash操作</p>
 
       
@@ -461,7 +461,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux下如何避免误删文件"><span class="toc-number">1.</span> <span class="toc-text">Linux下如何避免误删文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-number">1.1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预防方法"><span class="toc-number">1.2.</span> <span class="toc-text">预防方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#改变使用rm的习惯"><span class="toc-number">1.2.1.</span> <span class="toc-text">改变使用rm的习惯</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#trash-cli"><span class="toc-number">1.2.2.</span> <span class="toc-text">trash-cli</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#软件介绍"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">软件介绍</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#安装"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#使用"><span class="toc-number">1.2.2.3.</span> <span class="toc-text">使用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#说明"><span class="toc-number">1.2.2.4.</span> <span class="toc-text">说明</span></a></li></ol></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">Linux下如何避免误删文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.2.</span> <span class="toc-text">预防方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-number">1.2.1.</span> <span class="toc-text">改变使用rm的习惯</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-number">1.2.2.</span> <span class="toc-text">trash-cli</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#null"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">软件介绍</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#null"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#null"><span class="toc-number">1.2.2.3.</span> <span class="toc-text">使用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#null"><span class="toc-number">1.2.2.4.</span> <span class="toc-text">说明</span></a></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -624,11 +624,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">tool</a>
+                <a href="javascript:void(0)" class="js-tag color1">shell</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">shell</a>
+                <a href="javascript:void(0)" class="js-tag color5">tool</a>
               </li>
              
               <li class="article-tag-list-item">
